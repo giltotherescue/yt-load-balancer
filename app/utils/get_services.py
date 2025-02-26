@@ -13,6 +13,6 @@ def get_all_cloud_run_service_uris():
         services = client.list_services(parent=parent)
         flat_runs.extend(services)
 
-    all_uris = [run.uri for run in flat_runs]
+    all_uris = [run.uri for run in flat_runs if "load-balancer" not in run.uri]
     logger.info(f"Service count in all regions: {len(all_uris)}")
     return all_uris

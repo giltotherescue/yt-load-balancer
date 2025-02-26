@@ -11,6 +11,7 @@ class EnvMode(StrEnum):
 class ApiSettings(BaseSettings):
     API_KEY: str
     ENV: str = EnvMode.PROD
+    SCRAPER_SERVICE_PREFIX: str = "proxy-scrapper"
 
     model_config = SettingsConfigDict(env_file=".env", extra="allow")
 

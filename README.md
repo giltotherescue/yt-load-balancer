@@ -432,7 +432,7 @@ and fault tolerance.
 
 ___
 
-## ## Deploy to GCP
+# Deploy to GCP
 
 ### Install Google Cloud CLI
 [https://cloud.google.com/sdk/docs/install](Install Google Cloud CLI)
